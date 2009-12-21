@@ -44,7 +44,7 @@ if(!function_exists('smf_activation')):
 	
 	// Define Default Options
 	$smf_options = array(
-		'mail_from'			=> 'noreply@mahoskye.com',//$default_address, //had to add a valid email
+		'mail_from'			=> $default_address,
 		'mail_from_name'	=> 'WordPress'
 	);
 	
