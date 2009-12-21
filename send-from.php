@@ -1,7 +1,7 @@
 <?php 
 /*
 Plugin Name: Send From
-Version: 1.0
+Version: 1.2
 Plugin URI: 
 Description: Changes the From line on any email sent from the server.
 Author: Ben Buddle
@@ -15,9 +15,13 @@ Author URI: http://www.mahoskye.com/
  */
 
 /**
+ * TODO
+ * + Having Issues when update not showing message that an update has been preformed
  * 
  * CHANGELOG
  * 
+ * 1.2 - Fixed issue with update message not displaying properly
+ * 1.1 - Fixed Error where default address was not properly used
  * 1.0 - Send Test Working and showing proper messages
  * 0.9 - Send Test Implemented and working, showing 'Settings Saved.'
  * 0.8 - Working without Send Test option
@@ -44,7 +48,7 @@ if(!function_exists('smf_activation')):
 	
 	// Define Default Options
 	$smf_options = array(
-		'mail_from'			=> $default_address,
+		'mail_from'			=> $default_address,//$default_address, //had to add a valid email
 		'mail_from_name'	=> 'WordPress'
 	);
 	
@@ -142,14 +146,24 @@ if(!function_exists('smf_options_page')):
 		}
 	}
 	
-	?>
+	/**
+	 * Copied from wp-admin/options-head.php
+	 */
+	if (isset($_GET['updated'])) : ?>
+	<div id="message" class="updated fade"><p><strong><?php _e('Settings saved.') ?></strong></p></div>
+<?php endif;?>
 <form method="post" action="options.php">
     <?php settings_fields('smf_settings_group'); ?>
 	<?php do_settings_sections('smf_settings'); ?>
 	<p class="submit"><input type="submit" name="Submit" value="<?php _e('Updates Options &raquo;', 'send-from');?>" /></p>
 </form>
-
-<form method="post">
+<?php 
+	$post_url = wp_get_referer();
+	if(isset($_GET['updated'])):
+		// If the Updated Message is displayed then remove the updated message
+		$post_url = remove_query_arg('updated', wp_get_referer());
+	endif;?>
+<form method="post" action="<?=$post_url;?>">
 	<?php settings_fields('smf_send_test_group'); ?>
 	<?php do_settings_sections('smf_send_test'); ?>
 	<p class="submit"><input type="submit" name="send_test" value="<?php _e('Send Test &raquo;', 'send-from');?>" /></p>

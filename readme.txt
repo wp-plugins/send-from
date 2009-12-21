@@ -1,14 +1,15 @@
 === Send From ===
+Contributors: Ben Buddle
 Tags: mail, mailer, phpmailer, change, from, send, email
 Requires at least: 2.7
-Tested up to: 2.8.6
-Stable tag: 1.0
+Tested up to: 2.9
+Stable tag: 1.2
 
 Changes the From line on any email sent from the server.
 
 == Description ==
 
-I have issues with my hosting service not allowing me to easily set the ‘From line’ for my server email. When ever a new user signs up they see username@<hostingservice> even though they should see user@site.com. Before Send From you would be required to modify your installation of WordPress just about every time you do an update. No longer. With Send From, you simply go into your admin panel and set what the end user sees in their From line.
+I have issues with my hosting service not allowing me to easily set the 'From line' for my server email. When ever a new user signs up they see username@<hostingservice> even though they should see user@site.com. Before Send From you would be required to modify your installation of WordPress just about every time you do an update. No longer. With Send From, you simply go into your admin panel and set what the end user sees in their From line.
 
 == Installation ==
 
@@ -44,3 +45,13 @@ Chances are if it's not working with another plugin then I have not encountered 
 == Support Questions ==
 
 At this time I am not offering open support for this plugin. It should remain stable through the various WordPress updates, but if it ever becomes unstable then I will update it.
+
+== Changelog ==
+ 1.2 - Fixed issue with update message not displaying properly
+ 1.1 - Fixed Error where default address was not properly used
+ 1.0 - Send Test Working and showing proper messages
+ 0.9 - Send Test Implemented and working, showing 'Settings Saved.'
+ 0.8 - Working without Send Test option
+ 0.7 - Added Options Page
+ 0.5 - Revision / working draft
+ 0.1 - Initial approact to content
