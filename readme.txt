@@ -1,9 +1,9 @@
 === Send From ===
 Contributors: Ben Buddle
 Tags: mail, mailer, phpmailer, change, from, send, email
-Requires at least: 2.7
-Tested up to: 2.9
-Stable tag: 1.2
+Requires at least: 3.2.1
+Tested up to: 3.2.1
+Stable tag: 1.3
 
 Changes the From line on any email sent from the server.
 
@@ -47,6 +47,7 @@ Chances are if it's not working with another plugin then I have not encountered 
 At this time I am not offering open support for this plugin. It should remain stable through the various WordPress updates, but if it ever becomes unstable then I will update it.
 
 == Changelog ==
+ 1.3 - Fixed typo
  1.2 - Fixed issue with update message not displaying properly
  1.1 - Fixed Error where default address was not properly used
  1.0 - Send Test Working and showing proper messages
