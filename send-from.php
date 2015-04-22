@@ -3,7 +3,7 @@
 Plugin Name: Send From
 Plugin URI: http://wordpress.org/plugins/send-from/
 Description: Plugin for modifying the from line on all emails coming from WordPress.
-Version: 2.0
+Version: 2.1
 Author: Benjamin Buddle
 Author URI: http://www.mahoskye.com/
 License: GPL2
@@ -17,6 +17,7 @@ License: GPL2
 
 /**
  * CHANGELOG
+ * 2.1 - Tested and confirmed working in WP 4.1.2
  * 2.0 - Updated the code to fix naming conventions, reduce size, and fix and issue with the options page
  * 1.3 - Fixed typo
  * 1.2 - Fixed issue with update message not displaying properly
