@@ -3,7 +3,7 @@
 Plugin Name: Send From
 Plugin URI: http://wordpress.org/plugins/send-from/
 Description: Plugin for modifying the from line on all emails coming from WordPress.
-Version: 2.1
+Version: 2.2
 Author: Benjamin Buddle
 Author URI: http://www.mahoskye.com/
 License: GPL2
@@ -17,6 +17,7 @@ License: GPL2
 
 /**
  * CHANGELOG
+ * 2.2 - Added missing quotation marks on line 63
  * 2.1 - Tested and confirmed working in WP 4.1.2
  * 2.0 - Updated the code to fix naming conventions, reduce size, and fix and issue with the options page
  * 1.3 - Fixed typo
@@ -62,8 +63,8 @@ if(!class_exists('Send_From')){
 		} // END public function __construct
 
 		public function set_send_from_options(){
-			add_filter('wp_mail_from', array(&$this, SF_Address));
-			add_filter('wp_mail_from_name', array(&$this, SF_Name));
+			add_filter('wp_mail_from', array(&$this, 'SF_Address'));
+			add_filter('wp_mail_from_name', array(&$this, 'SF_Name'));
 		} // END public function set_send_from_options
 
 		public function SF_Address(){

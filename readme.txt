@@ -3,7 +3,7 @@ Contributors: Benjamin Buddle
 Tags: mail, mailer, phpmailer, change, from, send, email
 Requires at least: 3.2.1
 Tested up to: 4.1.2
-Stable tag: 2.1
+Stable tag: 2.2
 
 Plugin for modifying the from line on all emails coming from WordPress.
 
@@ -46,6 +46,7 @@ Chances are if it's not working with another plugin then I have not encountered 
 If there are any issues that crop up, I will be happy to take a look at solving them. However, due to many factors, I can't offer active support for the plugin. 
 
 == Changelog ==
+ 2.2 - Added missing quotation marks on line 63
  2.1 - Tested and confirmed working in WP 4.1.2
  2.0 - Updated the code to fix naming conventions, reduce size, and fix and issue with the options page
  1.3 - Fixed typo
