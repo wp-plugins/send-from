@@ -11,13 +11,13 @@ License: GPL2
 
 /**
  * @author Benjamin Buddle
- * @copyright Benjamin Buddle 2011-2014 All Rights Reserved
+ * @copyright Benjamin Buddle 2011-2015 All Rights Reserved
  * @license This code is released under GNU GENERAL PUBLIC LICENSE Version 3.0 <http://www.gnu.org/licenses/gpl.html>
  */
 
 /**
  * CHANGELOG
- * 2.2 - Added missing quotation marks on line 63
+ * 2.2 - Added missing quotation marks on line 63, moved config location under Settings
  * 2.1 - Tested and confirmed working in WP 4.1.2
  * 2.0 - Updated the code to fix naming conventions, reduce size, and fix and issue with the options page
  * 1.3 - Fixed typo
@@ -132,7 +132,7 @@ if(!class_exists('Send_From')){
 		} // END public function Send_From_Do_Send_Test
 
 		public function add_menu(){
-			add_submenu_page('plugins.php', 'Send From', 'Send From', 'manage_options', 'send-from', array(&$this, 'send_from_settings_page'));
+			add_submenu_page('options-general.php', 'Send From', 'Send From', 'manage_options', 'send-from', array(&$this, 'send_from_settings_page'));
 		} // END public function add_menu
 
 		public function send_from_settings_page(){
