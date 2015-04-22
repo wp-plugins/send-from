@@ -9,7 +9,7 @@ Plugin for modifying the from line on all emails coming from WordPress.
 
 == Description ==
 
-I have issues with my hosting service not allowing me to easily set the 'From line' for my server email. Whenever a new user signs up they see username@hostingservice.com even though they should see user@site.com. Before Send From you would be required to modify your installation of Wordpress just about every time you do an update. No longer! With Send From, you simply go into your admin panel and set what the end user will see on their emails from line.
+I have issues with my hosting service not allowing me to easily set the 'From line' for my server email. Whenever a new user signs up they see username@hostingservice.com even though they should see user@site.com. Before Send From you would be required to modify your installation of Wordpress just about every time you do an update. No longer! With Send From, you simply go into 'Settings->Send From' and set what the end user will see on their emails from line.
 
 == Installation ==
 
@@ -19,7 +19,7 @@ I have issues with my hosting service not allowing me to easily set the 'From li
 
 = Set Defaults =
 
-1. Under the 'Plugins' area, click the link for 'Send From'
+1. Under the 'Settings' area, click the link for 'Send From'
 2. Change the From Name and From Email
 3. Click Update Options
 
@@ -43,7 +43,7 @@ Chances are if it's not working with another plugin then I have not encountered 
 
 == Support Questions ==
 
-If there are any issues that crop up, I will be happy to take a look at solving them. However, due to many factors, I can't offer active support for the plugin. 
+If there are any issues that crop up, I will be happy to take a look at solving them. I don't often check the support forum for issues, so if you have anything that needs immediate attention, reach out to me on twitter @mahoskye. 
 
 == Changelog ==
  2.2 - Added missing quotation marks on line 63, moved config location under Settings
