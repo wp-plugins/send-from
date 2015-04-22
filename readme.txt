@@ -47,14 +47,25 @@ If there are any issues that crop up, I will be happy to take a look at solving 
 
 == Changelog ==
 2.2 - Added missing quotation marks on line 63, moved config location under Settings
+
 2.1 - Tested and confirmed working in WP 4.1.2
+
 2.0 - Updated the code to fix naming conventions, reduce size, and fix and issue with the options page
+
 1.3 - Fixed typo
+
 1.2 - Fixed issue with update message not displaying properly
+
 1.1 - Fixed Error where default address was not properly used
+
 1.0 - Send Test Working and showing proper messages
+
 0.9 - Send Test Implemented and working, showing 'Settings Saved.'
+
 0.8 - Working without Send Test option
+
 0.7 - Added Options Page
+
 0.5 - Revision / working draft
+
 0.1 - Initial approact to content
